@@ -1,0 +1,311 @@
+/* ===== Global Styles ===== */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #FFF5F0;
+  color: #7A5A53;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ===== Header ===== */
+
+header {
+  background-color: #FFC4AA; /* Modern peach */
+  color: #5A4B47;
+  padding: 20px 0;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 2px 5px rgba(217, 140, 120, 0.3);
+}
+
+header h1 {
+  font-weight: 700;
+  font-size: 2.8rem;
+  margin: 0;
+}
+
+/* ===== Navigation ===== */
+
+nav {
+  background-color: #FFE8E1;
+  box-shadow: 0 2px 4px rgba(217, 140, 120, 0.2);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.15rem;
+  color: #7A5A53;
+  padding: 15px 0;
+  display: inline-block;
+  border-bottom: 3px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  border-bottom: 3px solid #D9786B;
+  color: #D9786B;
+}
+
+/* ===== Main Content ===== */
+
+main {
+  padding: 40px 0 80px;
+}
+
+/* Home Page Sections */
+
+#hero {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#hero h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #D9786B;
+  margin-bottom: 15px;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  color: #7A5A53;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#mission-vision {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+#mission-vision > div {
+  flex: 1 1 400px;
+  background-color: #FFE8E1;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(217, 140, 120, 0.3);
+}
+
+#mission-vision h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #D9786B;
+  margin-bottom: 12px;
+}
+
+#mission-vision p {
+  font-size: 1rem;
+  color: #5A4B47;
+}
+
+/* ===== Contact Form Styles ===== */
+
+form {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  background-color: #FFE8E1;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(217, 140, 120, 0.3);
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #7A5A53;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 2px solid #D9786B;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  font-family: 'Open Sans', sans-serif;
+  color: #5A4B47;
+  resize: vertical;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #C96351;
+  background-color: #FFF0EC;
+}
+
+button[type="submit"] {
+  background-color: #D9786B;
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #C96351;
+}
+
+/* ===== About Page Table ===== */
+
+.about-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 40px;
+  background-color: #FFE8E1;
+  box-shadow: 0 3px 8px rgba(217, 140, 120, 0.3);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.about-table td {
+  padding: 30px;
+  vertical-align: top;
+  font-size: 1rem;
+  color: #5A4B47;
+}
+
+.about-table img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.about-table h3 {
+  font-family: 'Poppins', sans-serif;
+  color: #D9786B;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* ===== Shop Page Styles ===== */
+
+.shop-page {
+  background-color: #FFE0EB; /* Soft pink */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.shop-page h2 {
+  color: #D9786B;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.shop-item {
+  border: 1px solid #7A5A53; /* Thin brown line */
+  border-radius: 10px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 3px 8px rgba(217, 140, 120, 0.15);
+}
+
+.shop-item img {
+  width: 100%;
+  height: auto;
+  max-height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.shop-item button {
+  background-color: #FFF5F0; /* Cream fill */
+  color: #D9786B; /* Pink text */
+  border: 2px solid #D9786B;
+  padding: 12px 20px;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.shop-item button:hover {
+  background-color: #FFE8E1;
+}
+
+
+/* ===== Footer ===== */
+
+footer {
+  background-color: #FFC4AA;
+  color: #5A4B47;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+  font-family: 'Open Sans', sans-serif;
+  box-shadow: 0 -2px 5px rgba(217, 140, 120, 0.3);
+}
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 16px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
